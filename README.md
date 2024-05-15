@@ -53,8 +53,8 @@ import "hardhat/console.sol";
 ```
 6. 部署-实时网络
    ```
-npx hardhat ignition deploy ./ignition/modules/Token.js --network <network-name>
-# 我这里用的是Sepolia
+   npx hardhat ignition deploy ./ignition/modules/Token.js --network <network-name>
+   # 我这里用的是Sepolia
    ```
 7. 样板项目
    
