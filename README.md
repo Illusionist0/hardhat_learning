@@ -57,4 +57,26 @@ import "hardhat/console.sol";
    # 我这里用的是Sepolia, 以太坊API有Infura和Alchemy，我用的是Infura
    ```
 7. 样板项目
+   - 克隆存储库[https://github.com/NomicFoundation/hardhat-boilerplate]
+   ```
+   git clone https://github.com/NomicFoundation/hardhat-boilerplate.git
+   cd hardhat-boilerplate
+   npm install
+   npx hardhat node
+   ```
+   连接钱包实例
+   
+   ```
+   npx hardhat run scripts/deploy.js --network localhost
+   ```
+   启动Web应用程序
+   ```
+   cd frontend
+   npm install
+   npm run start
+   ```
+   Open http://localhost:3000/
+   ```
+   npx hardhat --network localhost faucet <your address>
+   ```
    
