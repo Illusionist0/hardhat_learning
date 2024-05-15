@@ -40,7 +40,17 @@ cd test
 npx hardhat test
 ```
 5. 调试 HardHat NetWork
-
+```
+# 在Token.sol中添加
+import "hardhat/console.sol";
+# 添加到function transfer
+   console.log(
+        "Transferring from %s to %s %s tokens",
+        msg.sender,
+        to,
+        amount
+   );
+```
 6. 部署-实时网络
 
 7. 样板项目
