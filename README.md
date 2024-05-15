@@ -54,7 +54,7 @@ import "hardhat/console.sol";
 6. 部署-实时网络
    ```
    npx hardhat ignition deploy ./ignition/modules/Token.js --network <network-name>
-   # 我这里用的是Sepolia
+   # 我这里用的是Sepolia, 以太坊API有Infura和Alchemy，我用的是Infura
    ```
 7. 样板项目
    
