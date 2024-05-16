@@ -69,7 +69,10 @@ import "hardhat/console.sol";
    ```sh
    npx hardhat run scripts/deploy.js --network localhost
    ```
-   注: 上述命令报错 Transaction reverted and Hardhat couldn't infer the reason. UNPREDICTABLE_GAS_LIMIT；未能解决
+   注: 上述命令报错 Transaction reverted and Hardhat couldn't infer the reason. UNPREDICTABLE_GAS_LIMIT；
+
+   解决方案：Solidity0.8.24不兼容，必须采用原生0.8.17
+   
    启动Web应用程序
    ```sh
    cd frontend
@@ -77,7 +80,19 @@ import "hardhat/console.sol";
    npm run start
    ```
    Open http://localhost:3000/
+   
+   连接MetaMask账户（Coinbase账户也行），切换到测试网络localhost 8545
+   
+   输入faucet命令获取100MHT（chain ID:0x7a69,GO）和1ETH
    ```sh
    npx hardhat --network localhost faucet <your address>
    ```
-   
+   向其他账户发送MHT
+   <img width="360" alt="image" src="https://github.com/Illusionist0/hardhat_learning/assets/45280235/897033b9-07b9-44d2-ada4-1f1dbae13cf5">
+
+   <img width="1148" alt="image" src="https://github.com/Illusionist0/hardhat_learning/assets/45280235/5e91b8b2-a687-47c0-ba3c-0313bc8e1dc0">
+
+   <img width="838" alt="image" src="https://github.com/Illusionist0/hardhat_learning/assets/45280235/7704cd5d-b097-456f-99c9-e6c01df9866b">
+
+   <img width="809" alt="image" src="https://github.com/Illusionist0/hardhat_learning/assets/45280235/aa101070-ee5c-4ecd-a557-ab7931b14e05">
+
